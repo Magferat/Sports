@@ -1,0 +1,172 @@
+/* -------Font--------  */
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+       font-family: 'Poppins';
+       text-transform: capitalize;
+}
+main{
+    align-items: center;
+    justify-content: center;
+}
+/* }Top Part's Styles  */
+#one{
+    background: #2D25A0;
+    width: 100%;
+    height: 677px;
+    position: absolute;
+    left: 0px; top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+}
+#copa-watch{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10.84%;
+    padding-top: 150px;
+
+}
+.copa{
+    width: 485px; 
+    height: 230px;
+    
+}
+.watch{
+    background-color: #e02c6d;
+    width: 168px;
+    height: 44px;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white ;
+    font-weight: 500;
+    font-size: 16px;
+} 
+/* ---------------
+  Animation
+-------------- */
+.banner{
+    margin-right: 33%;
+    padding-top: 140px;
+    position: absolute;
+    left: 65%;
+} 
+
+.banner img{
+   width: 560px;
+   height: 438px;
+}
+#one:hover .banner{
+            
+            animation: kick 2s ease-in 1 forwards;
+}
+@keyframes kick {
+             0%{transition: img ;
+                transform: rotate(-35deg);
+                    transform-origin: top-right;  }             
+             
+             100%{ transition: 0;
+                transform: 0;
+                
+             }
+    
+}
+/* --------------------------------------------------   Second part's Styles
+------------------------------------------------- */
+.player-conteiner{
+    background-color: floralwhite;
+    margin-top: 677px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    padding-bottom: 15px;
+
+}
+.player{
+
+    margin: 10px;
+    align-items: center;
+    width: 300px;
+    height: 480p=px;
+    padding: 16px;
+    box-shadow: 6px 6px 6px 6px gray;
+}
+.player img{
+    width: 300px;
+    height: 256px ;
+
+} 
+/* ------------------ */
+ /* 3rd Part */
+ /* --------------. */
+#three{
+    display:flex ;
+    flex-direction: row;
+    padding-left: 10px;
+    width: 1050px;
+    height: 427px;
+    align-self: center;
+    background-color: burlywood;
+    margin-left: 22%;
+     
+    border-left: 5px solid;
+}
+.highlights{
+    margin-right: 10px;
+    width: 597px;
+    height: 309px;
+}  
+h3{
+    color: black ;
+    font-size: 48px;
+}
+.match img{ 
+   width: 567px ;  
+   height: 427px; 
+   
+}
+/* logo , icon, and coppyright part */
+footer{
+
+    padding-top: 100px; 
+    padding-bottom: 100px;
+    text-align: center;
+    width: 100%; height: 213px;
+ background-repeat: no-repeat;
+    
+}
+.fab{
+    font-size: 32px;
+    height: 35; width: 32;
+    padding:10px;
+
+}
+/* Media Quairy */
+@media only screen and ( max-width: 688px) {
+    .one{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+.players{
+    grid-template-columns: repeat(1, 1fr);
+
+}
+.player{
+    flex-direction: row;
+    align-items: center;
+}
+/* End */
+    
